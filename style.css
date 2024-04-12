@@ -1,0 +1,40 @@
+body{
+    background-image: url("water.jpg");
+}
+.container{
+    background-color: #aaa;
+    width:700px;
+    border:3px solid black;
+    outline:10px solid gray;
+    margin: 100px auto;
+    padding: 10px;
+    text-align: justify;
+
+}
+
+.gornja_slija{
+    float:left;
+    border:2px solid white;
+    margin-right: 10px;
+}
+.crni{
+    background-color: black;
+    color: white;
+    width: 250px;
+    padding: 3px;
+    float: right;
+    margin-left: 5px;
+
+}
+.sivi{
+    background-color: #777;
+
+    padding: 5px;
+
+}
+.donja_slija{
+    border: 2px solid black;
+    float: left;
+    margin-right: 5px;
+
+}
