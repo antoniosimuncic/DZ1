@@ -3,66 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>VERN'</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #202020;
+            color: #ffffff;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+        .navbar a:hover {
+            color: #f0a500;
+        }
+        .navbar .social-icons img {
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+        }
+        mark{
+            background-color: red;
+            color: white;
+        }
+        .uvod {
+            background-image: url('Slike/pozadina.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            text-align: center;
+        }
+        .uvod h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .uvod p {
+            font-size: 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0a500;
+            padding-bottom: 10px;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            width: 300px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+        .card:hover img {
+            transform: scale(1.1);
+        }
+        .card p {
+            padding: 15px;
+            color: #555;
+        }
+        .card h2 {
+            padding: 15px;
+        }
+        
+        .footer {
+            background-color: #202020;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #f0a500;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
 <body>
-    <div class="container">
+    <div class="navbar">
+        <div class="menu">
+            <a href="#aboutus">O VERN'U</a>
+            <a href="#studiji">STUDIJI</a>
+            <a href="#kontakt">KONTAKT</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@universityvern" target="_blank"><img src="Slike/tiktok.svg" alt="TikTok"></a>
+            <a href="https://www.instagram.com/vern_university" target="_blank"><img src="Slike/insta.svg" alt="Instagram"></a>
+            <a href="https://hr.linkedin.com/school/vern'%E2%80%8B-university/" target="_blank"><img src="Slike/link.svg" alt="LinkedIn"></a>
+            <a href="https://www.youtube.com/user/VERNuniversity" target="_blank"><img src="Slike/yt.svg" alt="YouTube"></a>
+            <a href="https://www.facebook.com/profile.php?id=100064558815216" target="_blank"><img src="Slike/face.svg" alt="Facebook"></a>
+        </div>
+    </div>
 
-      <h1>Održan intenzivni ciklus izbornih otočkih kolegija u VERN'ovom
-        Međunarodnom centru na Visu</h1>
+    <div class="uvod">
+        <div>
+            <h1>Dobrodošli na <mark>VERN'</mark></h1>
+            <p>Nastavite Vaše obrazovanje s nama. Istražite široku ponudu studija na našem sveučilištu.</p>
+        </div>
+    </div>
 
-        <section class="gornji">
-            <img src="glavna.jpg" alt="" class="gornja_slija">
+    <div class="content" id="aboutus">
+        <h2>O VERN'U</h2>
+        <p>VERN’ danas izvodi ukupno 10 studija na prijediplomskoj i 7 na diplomskoj razini, 
+            na kojima studira više od 1.800 studenata, dok VERN’ova mreža alumnija broji više od 6.000 članova.
+            VERN’ je akademski razvoj započeo davne 1994. godine kao prvo hrvatsko privatno poslovno visoko učilište, 
+            koje je tijekom svoje transformacije u respektabilnu akademsku instituciju u hrvatsko visoko obrazovanje unijelo poduzetnički način razmišljanja i poduzetničku poslovnu kulturu.
+            Organizacija i implementacija različitih projekata jedna je od ključnih konkurentskih odrednica naše institucije. Projekti na kojima sudjelujemo, u suradnji s različitim dionicima iz obrazovanja i gospodarstva, pružaju nam kvalitetne i realne spoznaje o trendovima u današnjem društvu.
+            U skladu s višegodišnjom orijentacijom i tradicijom obrazovanja stručnjaka za potrebe gospodarskog razvoja u europskom i globalnom kontekstu, VERN’ pokreće niz inicijativa za snažniju suradnju između akademskog i gospodarskog sektora objedinjenih u konceptu #EducationmeetsBusiness
+        </p>
+    </div>
 
-            <h2>VERN'ovi studenti su krajem ožujka sudjelovali
-                na dvotjednom intenzivnom ciklusu izbornih
-                otočkih kolegija koji su održani u VERN'ovom
-                Međunarodnom sveučilišnom centru na otoku
-                Visu.
-            </h2>
-
-            <p>U terminu od 15. do 28. ožujka u Centru su se
-                izmijenile tri grupe studenata. Prva je grupa na Visu
-                boravila prvoga tjedna, kada su održana predavanja
-                na kolegijima Govorničke vještine (dr. sc. Ozana
-                Ramljak) i Odnosi s javnošću(doc. dr. sc. Ivan
-                Tanta). Studenti su tijekom svog boravka posjetili i
-                predstavnike gradske uprave s kojima su razgovarali o razvoju otoka, a organizirali
-                su i okrugli stol na temu odnosa s javnošću.
-            </p>
-        </section>
-
-        <section class="donji">
-            <div class="crni">
-                <h2>Istaknuto...</h2>
-                <div class="sivi">
-            <img src="jedrenje.jpg" alt="" class="donja_slija">
-                    Za svaku je
-                        grupu bio
-                        organiziran i
-                        prigodni program
-                        izvannastavnih
-                        aktivnosti koji se sastojao od
-                        jedrenja, vožnje kayaka te
-                        obilaska military rute.
-                </div>
+    <div class="content" id="studiji">
+        <h2>STUDIJI</h2>
+        <div class="cards">
+            <div class="card">
+                <a href="https://studiraj.vern.hr/studiji/ekonomija-poduzetnistva/" target="_self"><img src="Slike/ekonomija.png" alt="Ekonomija"></a>
+                <h2>Ekonomija poduzetništva</h2>
+                <p>Studij te priprema za ono što te očekuje u stvarnom svijetu. Onom poslovnom, naravno.
+                    Tijekom studija osposobit ćemo te za široki raspon poslova – od karijere u velikim korporativnim sustavima, 
+                    do pokretanja vlastitog startupa ili vođenja obiteljskog poduzeća.</p>
             </div>
-            <p>Druga je grupa studenata slušala kolegije
-                Promocija (Ivo Duboković, mag. oec.) i
-                Upravljanje prodajom (mr. Dijana Vuković), a
-                posjetili su i Viški HIB te Vinariju Lipanović.
-                </p>
-                <p>Za treću grupu studenata održana su
-                    predavanja na kolegijima Inovativnost poduzeća
-                    (mr. sc. Gordana Ćorić) i Upravljanje projektima
-                    (Karolina Horvatinčić, MBA), a gostujuća
-                    predavanja u Centru su im održali Toni Bunčić
-                    (Poljoprivredna zadruga Podšpilje i
-                    Poljoprivredni obrt Poje), gosti iz udruge SVIMA,
-                    Pino Vojković (turistička agencija Alternatura), Damir Radica (PTO Bakhus),
-                    predstavnik proizvođača vina Roki's te Učenićka zadruga ISSA.</p>
-        </section>
-    </div><!-- od containera-->
+            <div class="card">
+                <a href="https://studiraj.vern.hr/studiji/studij-turizma/" target="_self"><img src="Slike/turizam.jpg" alt="Turizam"></a>
+                <h2>Turistički i hotelski menadžment</h2>
+                <p>Danas kada su i najudaljenije destinacije tek na nekoliko sati leta, 
+                    a samo jedan loš review može napraviti trajnu štetu nekoj destinaciji, 
+                    s izazovima turizma možemo se nositi jedino uz pomoć struke i znanja. 
+                    Zbog toga je i cilj ovog studija vrhunsko obrazovanje stručnjaka iz područja destination i hospitality menadžmenta.</p>
+            </div>
+            <div class="card">
+                <a href="https://studiraj.vern.hr/studiji/internet-of-things-iot/" target="_self"><img src="Slike/iot.jpg" alt="Internet Stvari"></a>
+                <h2>Studij interneta stvari</h2>
+                <p>Želiš li postati IoT developer i sudjelovati u razvoju tehnologije koja mijenja način na koji komuniciramo sa svijetom oko sebe? 
+                    Znaš li da gotovo svaki dan koristimo IoT a da toga nismo ni svjesni?! Koristimo navigaciju, 
+                    plaćamo beskontaktno putem mobitela ili primjerice rezerviramo parking putem app-a.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" id="kontakt">
+        <p>2024 Sveučilište VERN' | <a href="https://www.vernuni.eu/">International site</a></p>
+        <p>Palmotićeva ulica 82/1, 10 000 Zagreb, Hrvatska | 099 123 8219</p>
+        
+    </div>
+    
 </body>
 </html>
